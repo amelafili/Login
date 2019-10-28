@@ -1,0 +1,49 @@
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+input, textarea {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+    padding-bottom: 10px;
+}
+
+.error {
+    background: red;
+    padding: 1em;
+    display: inline-block;
+    font-size: .9em;
+    
+}
+
+.cta {
+    background: #89c5da;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 1em;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.results {
+    margin-top: 50px;
+    border: #add8e6 2px solid;
+    border-radius: 4px;
+}
+
+strong {
+    display: block;
+}
+
+span {
+    margin-bottom: 20px;
+    display: block;
+}

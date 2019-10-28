@@ -1,0 +1,11 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    border: lightblue, solid, 3px;
+}
+
+p {
+    font-size: 15px;
+}

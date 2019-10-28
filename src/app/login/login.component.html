@@ -1,0 +1,22 @@
+
+<h1>Employee Login</h1>
+<form [formGroup]="form" (ngSubmit)="onSubmit($event)" >
+ <div *ngIf="submitted && form.controls.name.errors" class="error">
+    <div *ngIf="form.controls.name.errors.required">
+        Your name is required
+    </div>
+</div>
+<input type="text" formControlName="name"><p>Enter Your Name</p>
+
+<div *ngIf="submitted && form.controls.password.errors" class="error">
+        <div *ngIf="form.controls.password.errors.required">
+            Your password is required
+        </div>
+    </div>
+<input type="text" formControlName="password"><p>Enter Password</p>
+<input type="submit" value="Log in" class="cta">
+<div *ngIf="submitted" class="results">
+    <strong >Success!</strong>
+    
+</div>
+</form>

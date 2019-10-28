@@ -1,0 +1,16 @@
+<h1>Home</h1>
+<h2> Employees </h2>
+<!--if there are users-->
+
+<ul *ngIf="users">
+    <!--shows data of users using interpolation-->
+    <li *ngFor="let user of users.data">
+        <img [src]="user.avatar">
+        <p>{{user.first_name}} {{user.last_name}}
+            <a routerLink="/login" class="btn">Log in</a>
+        </p>
+        
+    </li>
+</ul>
+
+<app-footer></app-footer>
